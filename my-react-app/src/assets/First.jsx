@@ -119,7 +119,22 @@ const navigate = useNavigate();
   onClick={() => {
     setOpenLetter(false);
     navigate("/letter");
+    
   }}
+    style={{
+    backgroundColor: "#C41E3A",
+    color: "#fff",
+    border: "none",
+    padding: "12px 28px",
+    borderRadius: "10px",
+    fontSize: "1rem",
+    fontWeight: "600",
+    cursor: "pointer",
+    boxShadow: "0 4px 12px rgba(196, 30, 58, 0.35)",
+    transition: "all 0.3s ease",
+  }}
+  onMouseEnter={(e) => (e.target.style.backgroundColor = "#A3152D")}
+  onMouseLeave={(e) => (e.target.style.backgroundColor = "#C41E3A")}
 >
   Lezz Go
 </button>
